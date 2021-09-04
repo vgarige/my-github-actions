@@ -3,7 +3,7 @@ name: shell commands
 on: [push] 	##event to triger the workflow
 jobs:
   my-first-job:
-    runs-one: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
      - name: echo a string
        run: echo "hello-world"
