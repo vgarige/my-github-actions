@@ -2,7 +2,7 @@
 name: shell commands
 on: [push] 	##event to triger the workflow
 jobs:
-  run-shell-command:
+  my-first-job:
     runs-on: ubuntu-latest
     steps:
      - name: echo a string
@@ -11,3 +11,7 @@ jobs:
        run:  |
          echo "multiline script"
          hostname
+     - name: phthon command
+       run: |
+         import platform
+         pring(platform.processor())
