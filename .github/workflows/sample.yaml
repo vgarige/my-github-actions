@@ -14,4 +14,4 @@ jobs:
      - name: phthon command
        run: |
          import platform
-         pring(platform.processor())
+         print(platform.processor())
